@@ -9,7 +9,8 @@ namespace MvcCoreGiris.Models
     public class Kisi
     {
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Ad alanı zorunludur.")]
+        [Display(Name = "Ad")]
         public string KisiAd { get; set; }
     }
 }
